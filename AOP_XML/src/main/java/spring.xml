@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-init-method="setUp" default-destroy-method="clear">
+
+	<!-- bean definitions here -->
+	
+	<!-- business class declaration -->
+	<bean id="bdcemp" class="BDCEmployee">
+	    <property name="name" value="BDCEmployee"></property>
+    </bean>
+    
+    <bean id="cdcemp" class=CDCEmployee">
+	    <property name="name" value="CDCEmployee"></property>
+    </bean>
+    
+    <!-- Aspect class declaration -->
+    <bean id="aa" class="Aspect1"></bean>
+    <bean id="bb" class="Aspect2"></bean>
+    
+    <bean id="bdcproxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="target" ref="bdcemp"></property>
+    <property name=
+    </bean>   
+    
+    <!-- Aspect class declaration --> 
+    <bean id="after" class="Aspect1"></bean>
+    <bean id="before" class="Aspect2"></bean>
+    
+    <bean id="bdcproxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    
+    </bean>
+
+
+
+	<!-- <bean id="movie" class="com.wipro.Movie.Movie">
+		<property name="movieId" value="M001" />
+		<property name="movieName" value="The Firm" />
+		<property name="movieActor" value="Tom Cruise" />
+		<property name="Date" value="August18" />
+		<property name="Time" value="11pm." />
+		
+
+	</bean>-->
+
+
+
+
+</beans>
+ 
+   

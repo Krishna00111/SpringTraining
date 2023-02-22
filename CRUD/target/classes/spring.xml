@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-init-method="setUp" default-destroy-method="clear">
+
+	<!-- bean definitions here -->
+
+
+
+	<bean id="movie" class="com.wipro.Movie.Movie">
+		<property name="movieId" value="M001" />
+		<property name="movieName" value="The Firm" />
+		<property name="movieActor" value="Tom Cruise" />
+		<property name="Date" value="August18" />
+		<property name="Time" value="11pm." />
+		
+
+	</bean>
+
+
+
+
+</beans>
+ 
+   

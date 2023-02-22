@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bean id="std" class="com.wipro.ForDemo.Student" p:addr-ref="addr" p:name="Wipro" p:id="100"/></bean> 
+<bean id="odd" class="com.wipro.ForDemo.Address"></bean>
+
+<!--  use above code instead of normal bean, code, respectively -->
